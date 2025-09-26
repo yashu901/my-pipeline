@@ -26,4 +26,4 @@ jobs:
              docker tag pipe:latest my-pipeline/myimage:v1      
 
     - name: Test Docker image
-      run: docker run --rm yashu901/myapp:latest echo "Container works!"
+      run: docker run --rm yashu901/pipe:latest echo "Container works!"
