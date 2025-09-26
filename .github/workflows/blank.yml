@@ -22,10 +22,11 @@ jobs:
           
     - name: Build Docker image
       run: |
-             docker build -t pipe:latest .  
+             docker build -t yashu901/pipe:latest .  
 
     - name: Push Docker image
       run: docker push yashu901/pipe:latest        
 
     - name: Test Docker image
       run: docker run --rm yashu901/pipe:latest echo "Container works!"
+
