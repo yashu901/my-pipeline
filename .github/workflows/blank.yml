@@ -23,7 +23,10 @@ jobs:
     - name: Build Docker image
       run: |
              docker build -t pipe:latest .
-             docker tag pipe:latest my-pipeline/myimage:v1      
+             docker tag pipe:latest my-pipeline/myimage:v1   
+
+    - name: Push Docker image
+      run: docker push yashu901/pipe:latest        
 
     - name: Test Docker image
       run: docker run --rm yashu901/pipe:latest echo "Container works!"
