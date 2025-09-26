@@ -22,5 +22,5 @@ jobs:
           
     - name: Build Docker image
       run: |
-             docker build -t pipe:latest
+             docker build -t pipe:latest .
              docker tag pipe:latest my-pipeline/myimage:v1      
