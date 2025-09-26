@@ -22,7 +22,7 @@ jobs:
           
     - name: Build Docker image
       run: |
-             docker build -t yashu901/my-pipelinel:latest .
+             docker build -t pipe:latest .
               
     - name: Tag Docker image
-      run: docker tag myimage:latest my-pipeline/myimage:v1
+      run: docker tag pipe:latest my-pipeline/myimage:v1
