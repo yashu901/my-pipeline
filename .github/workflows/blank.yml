@@ -33,3 +33,5 @@ jobs:
     - name: Run container on GitHub runner
       run: docker run -d -p 8080:80 yashu901/pipe:latest
 
+    - name: Check app health
+      run: curl -f http://localhost:8080 || exit 1
