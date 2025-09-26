@@ -22,4 +22,5 @@ jobs:
           
     - name: Build Docker image
       run: |
-             docker compose -f path/to/docker-compose.yml up --build -d
+             docker build -t pipe:latest
+             docker tag pipe:latest my-pipeline/myimage:v1      
