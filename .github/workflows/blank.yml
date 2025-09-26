@@ -1,0 +1,17 @@
+name: pipeline
+
+on:
+   workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+         
+         - name: Clone yashu901/my-pipeline PUBLIC repository
+           uses: yashu901/my-pipeline/clone-github-repo-action@v2.1
+           with:
+                depth: 1
+                branch: 'main'
+                owner: 'yashu901'
+                repository: 'my-pipeline'           
