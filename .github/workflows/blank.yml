@@ -30,3 +30,6 @@ jobs:
     - name: Test Docker image
       run: docker run --rm yashu901/pipe:latest echo "Container works!"
 
+    - name: Run container on GitHub runner
+      run: docker run -d -p 8080:80 yashu901/pipe:latest
+
