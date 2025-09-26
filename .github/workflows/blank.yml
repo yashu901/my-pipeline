@@ -22,7 +22,4 @@ jobs:
           
     - name: Build Docker image
       run: |
-             docker build -t pipe:latest .
-              
-    - name: Tag Docker image
-      run: docker tag pipe:latest my-pipeline/myimage:v1
+             docker compose up --build -d
